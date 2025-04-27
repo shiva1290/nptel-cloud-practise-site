@@ -1,5 +1,7 @@
 # NPTEL Cloud Practice Site
 
+You can use the site at [Vercel](https://nptel-cloud-practise-site.vercel.app)
+
 This repository contains the code for a practice website designed for learning and practicing cloud computing concepts, likely as part of an NPTEL (National Programme on Technology Enhanced Learning) course.
 
 ## Overview
