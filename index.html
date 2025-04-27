@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NPTEL Cloud Computing Quiz</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Home Section -->
+    <section id="home-section">
+      <div class="container">
+        <h1 class="main-title">NPTEL Cloud Computing Quiz</h1>
+
+        <!-- Weekly Practice Section -->
+        <div class="practice-section">
+          <div class="section-header">
+            <div class="section-icon weekly-icon">W</div>
+            <h2>Weekly Practice</h2>
+          </div>
+
+          <div class="weeks-grid">
+            <div class="week-card">
+              <button class="week-btn" data-week="1">
+                <h3>W1</h3>
+                <p>Week 1</p>
+              </button>
+            </div>
+            <div class="week-card">
+              <button class="week-btn" data-week="2">
+                <h3>W2</h3>
+                <p>Week 2</p>
+              </button>
+            </div>
+            <div class="week-card">
+              <button class="week-btn" data-week="3">
+                <h3>W3</h3>
+                <p>Week 3</p>
+              </button>
+            </div>
+            <div class="week-card">
+              <button class="week-btn" data-week="4">
+                <h3>W4</h3>
+                <p>Week 4</p>
+              </button>
+            </div>
+            <div class="week-card">
+              <button class="week-btn" data-week="5">
+                <h3>W5</h3>
+                <p>Week 5</p>
+              </button>
+            </div>
+            <div class="week-card">
+              <button class="week-btn" data-week="6">
+                <h3>W6</h3>
+                <p>Week 6</p>
+              </button>
+            </div>
+            <div class="week-card">
+              <button class="week-btn" data-week="7">
+                <h3>W7</h3>
+                <p>Week 7</p>
+              </button>
+            </div>
+            <div class="week-card">
+              <button class="week-btn" data-week="8">
+                <h3>W8</h3>
+                <p>Week 8</p>
+              </button>
+            </div>
+            <div class="week-card">
+              <button class="week-btn" data-week="9">
+                <h3>W9</h3>
+                <p>Week 9</p>
+              </button>
+            </div>
+            <div class="week-card">
+              <button class="week-btn" data-week="10">
+                <h3>W10</h3>
+                <p>Week 10</p>
+              </button>
+            </div>
+            <div class="week-card">
+              <button class="week-btn" data-week="11">
+                <h3>W11</h3>
+                <p>Week 11</p>
+              </button>
+            </div>
+            <div class="week-card">
+              <button class="week-btn" data-week="12">
+                <h3>W12</h3>
+                <p>Week 12</p>
+              </button>
+            </div>
+          </div>
+        </div>
+
+<!-- Special Practice Section -->
+<div class="practice-section">
+  <div class="section-header">
+      <div class="section-icon special-icon">A</div>
+      <h2>Complete Practice</h2>
+  </div>
+  
+  <div class="special-grid">
+      <div class="special-card">
+          <button id="all-questions-btn" class="special-btn">
+              <div class="special-icon">
+                  <i class="fas fa-layer-group"></i>
+              </div>
+              <div class="special-content">
+                  <h3>All Questions</h3>
+                  <p>Practice all questions from every week in one session</p>
+              </div>
+          </button>
+      </div>
+      <div class="special-card">
+          <button id="pyq-set1-btn" class="special-btn">
+              <div class="special-icon">
+                  <i class="fas fa-history"></i>
+              </div>
+              <div class="special-content">
+                  <h3>PYQ Set 1</h3>
+                  <p>Practice previous year questions - Set 1</p>
+              </div>
+          </button>
+      </div>
+  </div>
+</div>
+
+  
+
+        <div class="bottom-nav">
+          <button id="home-btn" class="nav-btn">
+            <i class="fas fa-home"></i> Home
+          </button>
+          <button id="start-practice-btn" class="nav-btn primary-btn">
+            Start Practice
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section id="quiz-section" class="hidden">
+      <div class="quiz-container">
+        <!-- Quiz Header -->
+        <div class="quiz-header">
+          <button id="back-btn" class="back-btn">
+            <i class="fas fa-arrow-left"></i> Back to Selection
+          </button>
+          <h2 id="quiz-title">Week 1 Practice</h2>
+          <div class="timer">
+            <i class="fas fa-clock"></i> <span id="timer-display">15:00</span>
+          </div>
+        </div>
+
+        <!-- Quiz Content -->
+        <div class="quiz-content">
+          <!-- Left Sidebar -->
+          <div class="quiz-sidebar">
+            <div class="quiz-info">
+              <div class="info-item">
+                <span class="info-label">Time:</span>
+                <span class="info-value">
+                  <i class="fas fa-clock"></i>
+                  <span id="sidebar-timer">15:00</span>
+                </span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Score:</span>
+                <span class="info-value">
+                  <i class="fas fa-trophy"></i>
+                  <span id="score-display">0</span>/<span id="total-questions"
+                    >10</span
+                  >
+                </span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Completion:</span>
+                <span class="info-value">
+                  <i class="fas fa-tasks"></i>
+                  <span id="completion-percentage">0%</span>
+                </span>
+              </div>
+            </div>
+
+            <div class="questions-navigation">
+              <h3>QUESTIONS NAVIGATION</h3>
+              <div id="questions-nav" class="questions-grid">
+                <!-- Question navigation buttons will be generated here -->
+              </div>
+            </div>
+
+            <div class="session-progress">
+              <h3>SESSION PROGRESS</h3>
+              <div class="progress-container">
+                <div id="progress-bar" class="progress-bar"></div>
+              </div>
+              <div class="progress-info">
+                <span
+                  ><i class="fas fa-circle current-icon"></i> Q<span
+                    id="current-question"
+                    >1</span
+                  ></span
+                >
+                <span
+                  >Total: <span id="total-questions-progress">10</span></span
+                >
+              </div>
+            </div>
+
+            <div class="legend">
+              <h3>LEGEND</h3>
+              <div class="legend-item">
+                <span class="legend-icon current"></span>
+                <span class="legend-text">Current Question</span>
+              </div>
+              <div class="legend-item">
+                <span class="legend-icon correct"></span>
+                <span class="legend-text">Correct</span>
+              </div>
+              <div class="legend-item">
+                <span class="legend-icon incorrect"></span>
+                <span class="legend-text">Incorrect</span>
+              </div>
+              <div class="legend-item">
+                <span class="legend-icon answered"></span>
+                <span class="legend-text">Answered</span>
+              </div>
+              <div class="legend-item">
+                <span class="legend-icon unanswered"></span>
+                <span class="legend-text">Unanswered</span>
+              </div>
+            </div>
+
+            <button id="submit-test-btn" class="submit-test-btn">
+              Submit Whole Test
+            </button>
+          </div>
+
+          <!-- Main Quiz Area -->
+          <div class="quiz-main">
+            <div class="question-header">
+              <h3>
+                Question <span id="question-number">1</span> of
+                <span id="total-questions-main">10</span>
+              </h3>
+              <div class="timer-display">
+                <i class="fas fa-clock"></i> <span id="main-timer">15:00</span>
+              </div>
+            </div>
+
+            <div class="question-container">
+              <p id="question-text">
+                Which of the following fall(s) under the 'essential
+                characteristics' of cloud computing?
+              </p>
+
+              <div class="options-container">
+                <div class="option-wrapper">
+                  <div class="option" data-option-index="1">
+                    <div class="option-label">A</div>
+                    <div class="option-text">Resource Pooling</div>
+                  </div>
+                </div>
+                <div class="option-wrapper">
+                  <div class="option" data-option-index="2">
+                    <div class="option-label">B</div>
+                    <div class="option-text">Measured Service</div>
+                  </div>
+                </div>
+                <div class="option-wrapper">
+                  <div class="option" data-option-index="3">
+                    <div class="option-label">C</div>
+                    <div class="option-text">Rapid Elasticity</div>
+                  </div>
+                </div>
+                <div class="option-wrapper">
+                  <div class="option" data-option-index="4">
+                    <div class="option-label">D</div>
+                    <div class="option-text">Latency</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="quiz-actions">
+                <button id="submit-btn" class="action-btn submit-btn">
+                  Submit Answer
+                </button>
+                <button id="next-btn" class="action-btn next-btn" disabled>
+                  Next Question
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results-section" class="hidden">
+      <div class="results-container">
+        <h2 class="results-title">Quiz Complete!</h2>
+        <div id="results-summary" class="results-summary"></div>
+        <div class="results-actions">
+          <button id="review-btn" class="btn">Review Answers</button>
+          <button id="restart-btn" class="btn">Restart Quiz</button>
+          <button id="go-home" class="btn">Go Home</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Review Section -->
+    <section id="review-section" class="hidden">
+      <div class="review-container">
+        <h2>Review Answers</h2>
+        <div id="review-list"></div>
+        <button id="close-review-btn" class="btn">Close Review</button>
+      </div>
+    </section>
+    
+    <footer class="footer">
+      <p>
+        Created by Shiva Gupta ⚡ , Inspired from 
+        <a href="https://iot.devashish.top/" title="Visit Devashish's IoT page">iot.devashish.top</a>
+      </p>
+    </footer>
+    
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
