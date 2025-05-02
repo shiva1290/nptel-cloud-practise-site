@@ -7,7 +7,7 @@ let selectedAnswers = [];
 let userAnswers = [];
 let timer;
 let timeLeft = 0;
-let totalTime = 15 * 60; // 15 minutes in seconds
+let totalTime = 60 * 60; // 15 minutes in seconds
 let quizStarted = false;
 let quizMode = '';
 
@@ -2337,7 +2337,7 @@ function generateQuestionNavButtons() {
 
 function startTimer() {
     clearInterval(timer);
-    timeLeft = totalTime;
+    timeLeft = totalTime*6;
     updateTimerDisplay();
     
     timer = setInterval(function() {
